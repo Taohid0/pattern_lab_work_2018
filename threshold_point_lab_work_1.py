@@ -18,7 +18,7 @@ def max_error(l,value):
     counter = 0
 
     for i in l:
-        if value>=i:
+        if value>i:
             counter = counter + 1
     return counter
 
@@ -28,7 +28,7 @@ for i in range(min_value,max_value,1):
     print(mismatched_value,i)
     temp_accuracy = (total_values-mismatched_value)/total_values
     #print(temp_accuracy,total_values-mismatched_value,total_values,sep=" ")
-    if temp_accuracy>accuracy:
+    if temp_accuracy>=accuracy:
         accuracy = temp_accuracy
         point = i
 
